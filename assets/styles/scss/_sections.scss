@@ -1,0 +1,82 @@
+.section1 {
+    background-image: url("../../assets/images/Derechodefamilia2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+
+    &>.container {
+        display: flex;
+        flex-direction: column;
+        @include media-breakpoint-up(lg) {
+            flex-direction: row;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            border-radius: 8px;
+            background-color: rgba($color: #fff, $alpha: 0.7);
+            @include media-breakpoint-up(lg) {
+                margin-left: 2rem;
+            }
+
+            .form-group {
+                margin-bottom: 1rem;
+                .form-control {
+                    &option[disabled=disabled] {
+                        color: #eee;
+                    }
+
+                    &::placeholder{
+                        color: rgba(143, 137, 137, 0.85);
+                    }
+
+                }
+
+                .error-msg {
+                    color: #f00000;
+                    font-size: 14px;
+                    padding-top: 5px;
+                    display: none;
+                    &.visible {
+                        display: block;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    &_left {
+        text-align: center;
+
+        @include media-breakpoint-up(lg) {
+            width: 60%;
+            text-align: left;
+        }
+
+        &_subtitle{
+            margin-bottom: 13px;
+            padding: 7px 10px;
+            border-radius: 6px;
+            background-color: hsla(0, 0%, 100%, 0.39);
+            color: #000;
+        }
+        &_subtitle2{
+            display: inline-block;
+            padding: 7px 10px;
+            border-radius: 6px;
+            background-color: #ffa617;
+            color: #fff;
+
+        }
+    }
+
+    &_right {
+        @include media-breakpoint-up(lg) {
+            width: 40%;
+        }
+    }
+
+}

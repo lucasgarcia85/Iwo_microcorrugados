@@ -1,0 +1,191 @@
+footer {
+    position: relative;
+
+    .masInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-blue-main;
+        padding: 5rem 0;
+
+        .masInfo__datos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: white;
+
+            .masInfo__datos--titulo {
+                font-size: 2.1rem;
+                font-weight: bold;
+                margin: 0rem 0.3rem;
+                @include media-breakpoint-up(md) {
+                    font-size: 2.5rem;
+
+                }
+                @include media-breakpoint-up(lg) {
+                    font-size: 3.1rem;
+
+                }
+            }
+
+            .masInfo__datos--text {
+                margin-bottom: 2rem;
+                margin-right: 0.3rem;
+                margin-left: 0.3rem;
+
+                @include media-breakpoint-up(md) {
+                    font-size: 1.9rem;
+
+                }
+
+                @include media-breakpoint-up(lg) {
+                    font-size: 2.1rem;
+
+                }
+
+            }
+
+            .masInfo__datos--Whatsapp {
+                font-size: 1.6rem;
+                background-color: $color-whatsapp;
+                border-radius: 22px;
+                border-style: none;
+                color: white;
+                padding: 0.7rem 2.5rem;
+                transition: all 0.3s ease;
+                &:hover {
+                    background-color: #009688;
+                }
+
+                @include media-breakpoint-up(md) {
+                    font-size: 1.9rem;
+
+                }
+
+            }
+        }
+    }
+
+ 
+    .logo-footer {
+        margin-top: 4rem;
+    }
+
+    .social-links {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 3rem 0;
+
+        li {
+            margin-right: .6rem;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            a {
+                width: 4rem;
+                height: 4rem;
+                line-height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: $color-blue-main;
+                color: #fff;
+                border-radius: 50%;
+                text-decoration: none;
+                &:hover {
+                    background-color: $color-blue-light;
+                    transform: translateY(-0.5rem);
+                }
+
+                i {
+                    font-size: 2.4rem;
+                }
+            }
+        }
+    }
+
+
+    .matriculado {
+        text-align: center;
+    }
+
+    .copyright {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+    }
+
+    .footer-widget {
+        position: fixed;
+        left: 2rem;
+        bottom: 2rem;
+        z-index: 100;
+        width: 6rem;
+        height: 6rem;
+        animation: bounce-in-top 1.1s both;
+        animation-delay: 1s;
+        
+        a {
+            box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+            color: #fff;
+            position: absolute;
+            background-color: #009688;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            transition: all .3s ease;
+            z-index: 9999;
+            padding: 10px;
+            &:hover {
+                background-color: $color-whatsapp;
+                color: #fff;
+            }
+            img {
+                height: 40px;
+                margin: 0;
+                display: block;
+                position: relative;
+                padding: 0;
+                width: 40px;
+            }
+        }
+    }
+
+    .back-to-top {
+        color: #fff;
+        position: fixed;
+        right: 1.5rem;
+        bottom: 2.2rem;
+        transition: all .3s ease-in-out;
+        background-color: #fff;
+        border: 2px solid $color-blue-main;
+        width: 4rem;
+        height: 4rem;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        text-decoration: none;
+        z-index: 5;
+        @include media-breakpoint-up(lg) {
+            &:hover {
+                background-color: $color-blue-light;
+                border-color: $color-blue-light;
+                i {
+                    color: #fff;
+                }
+            }
+        }
+        
+        i {
+            font-size: 2.2rem;
+            color: $color-blue-main;
+            transition: all 0.3s ease;
+        }
+    }
+}

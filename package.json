@@ -1,0 +1,24 @@
+{
+  "name": "iwo_microcorrugados",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-dev": "sass --watch --update --style=expanded assets/styles/scss:assets/styles/css",
+    "sass-prod": "sass --no-source-map --style=compressed assets/styles/scss:assets/styles/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasgarcia85/Iwo_microcorrugados.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasgarcia85/Iwo_microcorrugados/issues"
+  },
+  "homepage": "https://github.com/lucasgarcia85/Iwo_microcorrugados#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
+}
