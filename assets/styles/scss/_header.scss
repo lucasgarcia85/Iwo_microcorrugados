@@ -7,23 +7,23 @@ header {
     }
     
     
-    &.sticky {
-        box-shadow: 0px 0px 6px #333;
-        background: rgb(0, 0, 0, 92%);
-        position: fixed;
-        z-index: 999;
-        top: 4px;
-        width: 100%;
-
-        .navbar-brand {
-            img {
-                width: 100px;
-            }
-        }
-    }
+    // &.sticky {
+    //     box-shadow: 0px 0px 6px #333;
+    //     background: rgb(0, 0, 0, 92%);
+    //     position: fixed;
+    //     z-index: 999;
+    //     top: 4px;
+    //     width: 100%;
+    //
+    //     .navbar-brand {
+    //         img {
+    //             width: 320px;
+    //         }
+    //     }
+    // }       
 
     .navbar{
-        background-color: gray;
+        background-color: rgb(0, 0, 0);
 
         &-toggler {
             border: 0;
@@ -42,7 +42,7 @@ header {
                         display: block;
                         width: 30px;
                         height: 3px;
-                        background-color: #fff;
+                        background-color: $color-menu;
                         transition: all .25s ease-in-out;
                         &:not(:last-child) {
                             margin-bottom: 7px;
@@ -56,6 +56,7 @@ header {
             text-decoration: none;
             outline: 0;
             box-shadow: 0 0 0 0;
+            
         }
 
 
@@ -74,12 +75,16 @@ header {
                     margin-right: 1.8rem;
                 }
                 .nav-link{
-                    font-size: 1.7rem;
-                    color:#ffffff;
+                    font-size: 2rem;
+                    color:$color-menu;
                     letter-spacing: -0.02em;
-                    font-weight: 300;
+                    text-transform: uppercase;
+                    font-weight: 600;
                     position: relative;
+                    transition: all 0.4s ease;
                     &:hover {
+                        color:$color-menu-hover;
+                        scale: 1.1;
                         &:after {
                             width: 88%;
                         }
@@ -100,31 +105,31 @@ header {
                     }
                 }
 
-                &.contact-us {
-                    background-color: $color-whatsapp;
-                    padding: .2rem 1.4rem;
-                    display: flex;
-                    flex-wrap: nowrap;
-                    align-items: center;
-                    border-radius: 2rem;
-                    width: fit-content;
-                    transition: all 0.3s ease;
-                    @include media-breakpoint-down(lg) {
-                        margin-top: 2rem;
-                    }
-                    &:hover {
-                        background-color: #009688;
-                    }
-                    a {
-                        font-weight: 400;
-                        &:after {
-                            display: none;
-                        }
-                    }
-                    i {
-                        margin-right: .5rem;
-                    }
-                }
+                // &.contact-us {
+                //     background-color: #f0da12;
+                //     padding: .2rem 1.4rem;
+                //     display: flex;
+                //     flex-wrap: nowrap;
+                //     align-items: center;
+                //     border-radius: 2rem;
+                //     width: fit-content;
+                //     transition: all 0.3s ease;
+                //     @include media-breakpoint-down(lg) {
+                //         margin-top: 2rem;
+                //     }
+                //     &:hover {
+                //         background-color: yellow;
+                //     }
+                //     a {
+                //         font-weight: 400;
+                //         &:after {
+                //             display: none;
+                //         }
+                //     }
+                //     i {
+                //         margin-right: .5rem;
+                //     }
+                // }
             }
         }
       
@@ -132,9 +137,19 @@ header {
 
     .navbar-brand {
         img {
-            width: 126px;
+            width: 150px;
             height: auto;
             transition: all 0.3s ease;
+
+            @include media-breakpoint-up(sm) {
+                width: 190px;
+                }
+            @include media-breakpoint-up(md){
+                width: 220px;
+            }
+            @include media-breakpoint-up(lg){
+                width: 240px;
+            }
         }
     }
 
@@ -142,7 +157,9 @@ header {
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon #S1{
     transform: rotate(45deg) translateY(7px);
+    background-color:$color-menu-hover;
 }
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon #S2{
     transform: rotate(-45deg) translateY(-7px);
+    background-color:$color-menu-hover;
 }

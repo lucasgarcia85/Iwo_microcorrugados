@@ -54,7 +54,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="assets/images/logo_kerlin.png" alt="logo Kerlin Bienes Raices" width="126">
+        <img src="assets/images/logo5-removebg-preview.png" alt="logo Kerlin Bienes Raices">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <div class="navbar-toggler-icon">
@@ -64,11 +64,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 aos-init aos-animate" data-aos="fade-left" data-aos-duration="700">
-          <li class="nav-item"><a class="nav-link " href="#loteos">Loteos</a></li>
-          <li class="nav-item"><a class="nav-link " href="#comunicateConAsesor">Contacto</a></li>
-          <li class="nav-item contact-us">
-            <a class="nav-link" href="https://wa.me/+5493364379531?text=¡Hola!%20Quisiera%20recibir%20más%20información%20sobre%20los%20loteos%20en%20San%20Nicolas%20de%20los%20arroyos" target="_blank"><i class="fab fa-whatsapp"></i> Contactanos</a>
-          </li>
+          <li class="nav-item"><a class="nav-link " href="#loteos">productos</a></li>
+          <li class="nav-item"><a class="nav-link " href="#comunicateConAsesor">montajes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#comunicateConAsesor">contacto</a></li></li>
         </ul>
 
       </div>
@@ -76,165 +74,145 @@
   </nav>
 
 </header>
-  <!-- <header id="header">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid" >
-        <a class="navbar-brand" href="#">IWO Microcorrugados 
-          <img src="">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-   
-  </header> -->
-  <!-- HEADER: Begin -->
-
-
+  <!-- MAIN CONTENT: BEGIN -->
   <main id="main">
-
-
-    <!-- CONTACT FORM: Begin -->
-    <section class="section1"  id="consulta">
+    <section class="section1">
       <div class="container">
         <div class="section1_left">
-          <h1 class="section1_left_title">Derecho de familia</h1>
-          <p class="section1_left_subtitle">Atención personalizada, profesional y responsable en la búsqueda de
-            soluciones
-            alternativas.</p>
-          <p class="section1_left_subtitle2">Atendemos consultas y patrocinamos en el ámbito específico de CABA.</p>
+          <h1 class="section1_left_title">Fabricación y Montaje de Microcorrugado</h1>
+          <p class="section1_left_subtitle">Nos especializamos unicamente en corrugados Tipo E y B</p>
+          <p class="section1_left_subtitle2">Ensamblado automático para montajes.</p>
         </div>
         <div class="section1_right">
-          <div class="w-form">
-
-            <form class="form" id="contact-form" method="post" action="phpmailer.php" enctype="multipart/form-data">
-              <div class="form-group">
-                <input type="text" id="Nombre" name="name" placeholder="Nombre" maxlength="256" required="required"
-                  class="form-control">
-                  <div id="name-error" class="error-msg">Nombre inválido</div>
-              </div>
-              <div class="form-group">
-                <input type="email" id="email" name="email" placeholder="E-mail" maxlength="256" class="form-control"
-                  required="required">
-                  <div id="email-error" class="error-msg">Nombre inválido</div>
-              </div>
-              <div class="form-group">
-                <input type="text" id="telefono" name="telephone" placeholder="Teléfono" maxlength="256" required=""
-                  class="form-control" required="required">
-                  <div id="telephone-error" class="error-msg">Nombre inválido</div>
-              </div>
-              <div class="form-group">
-                <select id="residence" name="residence" class="form-control">
-                  <option value="" disabled="disabled" selected="selected">Residís de Capital Federal? </option>
-                  <option value="Si">Si</option>
-                  <option value="No">No</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <input type="text" id="motive" name="motive" placeholder="Motivo de su consulta" maxlength="256"
-                  class="form-control" required="required">
-                  <div id="motive-error" class="error-msg">Nombre inválido</div>
-              </div>
-              <div class="form-group">
-                <textarea id="Consulta" name="comment" placeholder="Consulta" maxlength="5000" class="form-control"
-                  required="required" rows="4"></textarea>
-                  <div id="comment-error" class="error-msg">Nombre inválido</div>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Enviar" class="button form-control">
-              </div>
-            </form>
-
-          </div>
+          
         </div>
       </div>
     </section>
-    <!-- CONTACT FORM: End -->
+  
+    
 
       
   </main>
 
-  <!-- FOOTER: Begin -->
-  <footer>
-    <div class="masInfo" id="comunicateConAsesor">
-      <div class="masInfo__datos" data-aos="zoom-in-up" data-aos-easing="easy" data-aos-duration="2000">
-        <p class="masInfo__datos--titulo">¿Querés más información?</p>
-        <p class="masInfo__datos--text">Comunicate con nosotros vía WhatsApp.</p>
-        <a href="https://wa.me/5493364379531?text=¡Hola!%20Quisiera%20recibir%20más%20información%20sobre%20los%20loteos%20en%20San%20Nicolas%20de%20los%20arroyos"
-          target="_blank">
-          <button class="masInfo__datos--Whatsapp"><i class="fab fa-whatsapp"></i> +5493364379531</button>
-        </a>
+ <!-- FOOTER: Begin -->
+  <footer id="contacto">
+    <div class="container">
+      <h2 class="text-center">Comunicate con nosotros</h2>
+      <div class="row pt-3">
+        <div class="col-xl-8">
+          <!-- Contact Form: Begin -->
+          <div class="form">
+            <div class="formulario" id="contact">
+              <form class="row" id="contact-form" action="phpmailer.php" method="post" enctype="multipart/form-data">
+                <div class="col-lg-6 col-sm-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre*">
+                    <div id="name-error" class="error-msg">Nombre inválido</div>
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="Teléfono*">
+                    <div id="telephone-error" class="error-msg">Teléfono inválido</div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email*">
+                    <div id="email-error" class="error-msg">E-mail inválido</div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="location" name="location" placeholder="Locación*">
+                    <div id="location-error" class="error-msg">Locación inválida</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <select class="form-select" name="service" id="service">
+                      <option value="0" disabled="disabled" selected="selected">Seleccione el servicio por el que desea consultar</option>
+                      <optgroup label="Soluciones">
+                        <option value="Soluciones de Energía">Soluciones de Energía</option>
+                        <option value="Soluciones de Conectividad">Soluciones de Conectividad</option>
+                        <option value="Soluciones de Seguridad">Soluciones de Seguridad</option>
+                        <option value="Soluciones de IOT">Soluciones de IOT</option>
+                        <option value="Soluciones de Energía Renovable">Soluciones de Energía Renovable</option>
+                        <option value="Soluciones de Control de Acceso">Soluciones de Control de Acceso</option>
+                        <option value="Soluciones de Infraestructura">Soluciones de Infraestructura</option>
+                        <option value="Soluciones de Radio Enlace">Soluciones de Radio Enlace</option>
+                      </optgroup>
+                      <optgroup label="Mantenimientos">
+                        <option value="UPS">UPS</option>
+                        <option value="Equipos de Conectividad">Equipos de Conectividad</option>
+                        <option value="Sistemas de Videovigilancia">Sistemas de Videovigilancia</option>
+                        <option value="Extinción y Detección de Incendios">Extinción y Detección de Incendios</option>
+                        <option value="Sistemas de Refrigeración">Sistemas de Refrigeración</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" name="message" placeholder="Mensaje*"></textarea>
+                    <div id="message-error" class="error-msg">La consulta no puede quedar vacía</div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="6Lc70vslAAAAAGVVjtNxV2ssqW9WxdtHHLXa8Sjl"></div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                  <div class="form-group m-0">
+                    <button type="submit" class="btn btn-primary mt-1"><span>ENVIAR</span></button>
+                  </div>
+                </div>
+              </form>
+
+              <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+              </script>
+
+            </div>
+          </div>
+          <!-- Contact Form: End -->
+        </div>
+        <div class="col-xl-4">
+          <div class="redes">
+
+            <h3>Seguinos en nuestras redes sociales</h3>
+
+            <ul class="social-links">
+              <li>
+                <a target="_blank" href="https://www.instagram.com/netscomgroup/"><i
+                    class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.facebook.com/NetSCom.Group"><i
+                    class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.linkedin.com/company/netscomgroup/"><i class="fa-brands fa-linkedin-in"
+                    aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="text-center" data-aos="flip-left" data-aos-duration="1000">
-      <img class="logo-footer" src="assets/images/logo_kerlin_rounded.png" alt="Kerlin Bienes Raíces" width="125">
-    </div>
-    <ul class="social-links">
-      <li>
-        <a target="_blank" href="https://www.facebook.com/kerlinbienesraices/"><i class="fa-brands fa-facebook-f"
-            aria-hidden="true"></i></a>
-      </li>
-      <li>
-        <a target="_blank" href="https://www.instagram.com/kerlinbienesraices/"><i class="fa-brands fa-instagram"
-            aria-hidden="true"></i></a>
-      </li>
-      <li>
-        <a target="_blank" href="https://www.youtube.com/channel/UCO_9kE0eTwwPHhsSEK-htsw"><i
-            class="fa-brands fa-youtube" aria-hidden="true"></i></a>
-      </li>
-      <li>
-        <a target="_blank" href="https://www.tiktok.com/@kerlinbienesraices?lang=es"><i class="fa-brands fa-tiktok"
-            aria-hidden="true"></i></a>
-      </li>
-      <li>
-        <a target="_blank" href="https://www.linkedin.com/in/beatriz-kerlin"><i class="fa-brands fa-linkedin-in"
-            aria-hidden="true"></i>
-        </a>
-      </li>
-    </ul>
-    <p class="matriculado">Matriculado Responsable: Beatriz Kerlin - Matricula 1023</p>
     <div class="copyright">
-      <p class="copy">&copy;<span class="year-copy">2023</span> Todos los derechos reservados.</p>
+      <p class="copy"> Netscom &copy;<span class="year-copy">2023</span>. Todos los derechos reservados.</p>
     </div>
-
     <div class="footer-widget">
-      <div class="wwidget-container">
-        <a href="https://wa.me/5493364379531?text=¡Hola!%20Quisiera%20recibir%20más%20información%20sobre%20los%20loteos%20en%20San%20Nicolas%20de%20los%20arroyos" target="_blank"
-          class="wwidget-button template-3"><img alt="whatsapp"
-            src="https://d1v2p1s05qqabi.cloudfront.net/vendor/whatsappwidget/whatsapp.svg?v=91"></a>
+      <div class="widget-container">
+        <a href="https://wa.me/5491169321008?text=¡Hola!%20Quisiera%20recibir%20más%20información%20sobre..."
+          target="_blank" class="widget-button"><img alt="whatsapp"
+            src="assets/images/whatsapp.svg"></a>
       </div>
     </div>
     <a href="#main" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
 
   </footer>
-  <!-- FOOTER: End -->
 
   <!-- SCRIPTS: Begin -->
   
