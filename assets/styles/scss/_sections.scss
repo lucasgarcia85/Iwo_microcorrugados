@@ -29,18 +29,20 @@
         }
 
         &_subtitle{
+            font-size: 2rem;
+            margin: auto;
+            width: fit-content;
             margin-bottom: 13px;
             padding: 7px 10px;
             border-radius: 6px;
             background-color: hsla(0, 0%, 100%, 0.39);
             color: #000;
-        }
-        &_subtitle2{
-            display: inline-block;
-            padding: 7px 10px;
-            border-radius: 6px;
-            color: #fff;
 
+            @include media-breakpoint-up(lg) {
+                width: 70%;
+                margin: inherit;
+                
+            }
         }
     }
 
@@ -48,7 +50,30 @@
         @include media-breakpoint-up(lg) {
             width: 40%;
         }
+        img {
+            width: 90%;
+            border-radius: 20%;
+        }
     }
 
+}
+
+.micro_tipos{
+    
+    .tipo{
+        font-size: 1.3rem;
+        text-align: justify;
+    }
+  
+
+}
+
+.micro_montaje{
+    
+    .montaje{
+        font-size: 1.3rem;
+        text-align: justify;
+
+    }
 }
 

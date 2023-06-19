@@ -12031,7 +12031,7 @@ h1, .h1 {
 }
 @media (min-width: 768px) {
   h1, .h1 {
-    font-size: 5.6rem;
+    font-size: 4.5rem;
   }
 }
 
@@ -12087,7 +12087,6 @@ h2, .h2 {
   }
 }
 footer {
-  background-color: #a5971e;
   padding-top: 4rem;
   /*CONTACT FORM
   ****************************************/
@@ -12096,7 +12095,8 @@ footer .form {
   margin-bottom: 4rem;
 }
 footer .formulario {
-  background-color: rgba(17, 145, 214, 0.31);
+  margin: auto;
+  background-image: url(/assets/images/cartonsimple.jpg);
   padding: 2rem 1.3rem;
   border-radius: 1rem;
 }
@@ -12115,7 +12115,19 @@ footer .formulario .error-msg.visible {
   display: block;
 }
 footer .formulario .form-group {
+  margin: auto;
   margin-bottom: 2.2rem;
+  width: 80%;
+}
+@media (min-width: 768px) {
+  footer .formulario .form-group {
+    width: 85%;
+  }
+}
+@media (min-width: 992px) {
+  footer .formulario .form-group {
+    width: 90%;
+  }
 }
 footer .formulario .form-group .form-control,
 footer .formulario .form-group .form-select {
@@ -12189,7 +12201,7 @@ footer .copyright {
   align-items: center;
   justify-content: center;
   font-size: 1.3rem;
-  background-color: #0a245c;
+  background-color: black;
   color: #fff;
   height: 50px;
 }
@@ -12402,22 +12414,39 @@ header .navbar-brand img {
   }
 }
 .section1_left_subtitle {
+  font-size: 2rem;
+  margin: auto;
+  width: fit-content;
   margin-bottom: 13px;
   padding: 7px 10px;
   border-radius: 6px;
   background-color: hsla(0deg, 0%, 100%, 0.39);
   color: #000;
 }
-.section1_left_subtitle2 {
-  display: inline-block;
-  padding: 7px 10px;
-  border-radius: 6px;
-  color: #fff;
+@media (min-width: 992px) {
+  .section1_left_subtitle {
+    width: 70%;
+    margin: inherit;
+  }
 }
 @media (min-width: 992px) {
   .section1_right {
     width: 40%;
   }
+}
+.section1_right img {
+  width: 90%;
+  border-radius: 20%;
+}
+
+.micro_tipos .tipo {
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+.micro_montaje .montaje {
+  font-size: 1.3rem;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,4 @@
 footer {
-    background-color: $color-menu;
     padding-top: 4rem;
 
     .form {
@@ -9,7 +8,8 @@ footer {
     /*CONTACT FORM
     ****************************************/
     .formulario {
-        background-color: rgba(17, 145, 214, 0.31);
+        margin: auto;
+        background-image: url(/assets/images/cartonsimple.jpg);
         padding: 2rem 1.3rem;
         border-radius: 1rem;
         @include media-breakpoint-up(lg) {
@@ -28,7 +28,16 @@ footer {
         }
     
         .form-group {
+            margin: auto;
             margin-bottom: 2.2rem;
+            width: 80%;
+                @include media-breakpoint-up(md) {
+                    width: 85%;
+                }
+                @include media-breakpoint-up(lg) {
+                    width: 90%;
+                }
+
     
             .form-control,
             .form-select {
@@ -125,7 +134,7 @@ footer {
         align-items: center;
         justify-content: center;
         font-size: 1.3rem;
-        background-color: $color-blue-dark;
+        background-color: black;
         color: #fff;
         height: 50px;
         p {
