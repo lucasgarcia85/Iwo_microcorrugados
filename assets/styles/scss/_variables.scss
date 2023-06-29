@@ -1,14 +1,15 @@
 /*FONTS
 *******************************/
-$font-family-main: 'Montserrat', sans-serif;
+$font-family-main: 'Museo','Montserrat', sans-serif;
 
 /*COLORS
 *******************************/
-$color-main: #333;
+$color-main: black;
+$color-bg-main: #ebebeb;
 $color-blue-main: #20396f;
 $color-blue-light: #4764a3;
 $color-blue-dark: #0a245c;
 $color-whatsapp: #1fca1f;
 $color-available: #1CCB00;
-$color-menu: #a5971e;
-$color-menu-hover:#f0da12;
+$color-menu: rgb(135, 25, 25);   //#a5971e
+$color-menu-hover:#471405;

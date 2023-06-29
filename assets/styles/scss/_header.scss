@@ -23,7 +23,7 @@ header {
     // }       
 
     .navbar{
-        background-color: rgb(0, 0, 0);
+        background-color: $color-bg-main;
 
         &-toggler {
             border: 0;
@@ -98,7 +98,7 @@ header {
                             width: 0;
                             position: absolute;
                             transition: all 0.3s ease;
-                            background-color: #fff;
+                            background-color: $color-menu-hover;
                             height: 1px;
                             bottom: 2px;
                         }
@@ -137,18 +137,18 @@ header {
 
     .navbar-brand {
         img {
-            width: 150px;
+            width: 250px;
             height: auto;
             transition: all 0.3s ease;
 
             @include media-breakpoint-up(sm) {
-                width: 190px;
+                width: 270px;
                 }
             @include media-breakpoint-up(md){
-                width: 220px;
+                width: 290px;
             }
             @include media-breakpoint-up(lg){
-                width: 240px;
+                width: 350px;
             }
         }
     }

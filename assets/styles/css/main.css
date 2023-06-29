@@ -11917,11 +11917,23 @@ html {
   font-size: 10px;
 }
 
+@font-face {
+  font-family: "Museo";
+  src: url("../../fonts/Museo700-Regular.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo";
+  src: url("../../fonts/Museo300-Regular.otf");
+  font-weight: 300;
+  font-style: normal;
+}
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Museo", "Montserrat", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
-  color: #333;
+  color: black;
 }
 
 .btn {
@@ -12026,7 +12038,7 @@ h2,
 }
 
 h1, .h1 {
-  font-size: 3.3rem;
+  font-size: 3rem;
   color: black;
 }
 @media (min-width: 768px) {
@@ -12148,6 +12160,13 @@ footer .formulario .form-group .form-select:focus {
 }
 footer .formulario .form-group textarea {
   height: 178px;
+}
+footer .formulario .botonform {
+  width: 80%;
+  margin: auto;
+}
+footer .formulario .botonform .btn {
+  min-width: 180px;
 }
 footer .logo-footer {
   margin-top: 4rem;
@@ -12281,7 +12300,7 @@ footer .back-to-top i {
   }
 }
 header .navbar {
-  background-color: rgb(0, 0, 0);
+  background-color: #ebebeb;
 }
 header .navbar-toggler {
   border: 0;
@@ -12299,7 +12318,7 @@ header .navbar-toggler-icon span {
   display: block;
   width: 30px;
   height: 3px;
-  background-color: #a5971e;
+  background-color: rgb(135, 25, 25);
   transition: all 0.25s ease-in-out;
 }
 header .navbar-toggler-icon span:not(:last-child) {
@@ -12323,7 +12342,7 @@ header .navbar .navbar-collapse .nav-item:not(:last-child) {
 }
 header .navbar .navbar-collapse .nav-item .nav-link {
   font-size: 2rem;
-  color: #a5971e;
+  color: rgb(135, 25, 25);
   letter-spacing: -0.02em;
   text-transform: uppercase;
   font-weight: 600;
@@ -12331,7 +12350,7 @@ header .navbar .navbar-collapse .nav-item .nav-link {
   transition: all 0.4s ease;
 }
 header .navbar .navbar-collapse .nav-item .nav-link:hover {
-  color: #f0da12;
+  color: #471405;
   scale: 1.1;
 }
 header .navbar .navbar-collapse .nav-item .nav-link:hover:after {
@@ -12346,40 +12365,40 @@ header .navbar .navbar-collapse .nav-item .nav-link:hover:after {
     width: 0;
     position: absolute;
     transition: all 0.3s ease;
-    background-color: #fff;
+    background-color: #471405;
     height: 1px;
     bottom: 2px;
   }
 }
 header .navbar-brand img {
-  width: 150px;
+  width: 250px;
   height: auto;
   transition: all 0.3s ease;
 }
 @media (min-width: 576px) {
   header .navbar-brand img {
-    width: 190px;
+    width: 270px;
   }
 }
 @media (min-width: 768px) {
   header .navbar-brand img {
-    width: 220px;
+    width: 290px;
   }
 }
 @media (min-width: 992px) {
   header .navbar-brand img {
-    width: 240px;
+    width: 350px;
   }
 }
 
 .navbar-toggler[aria-expanded=true] .navbar-toggler-icon #S1 {
   transform: rotate(45deg) translateY(7px);
-  background-color: #f0da12;
+  background-color: #471405;
 }
 
 .navbar-toggler[aria-expanded=true] .navbar-toggler-icon #S2 {
   transform: rotate(-45deg) translateY(-7px);
-  background-color: #f0da12;
+  background-color: #471405;
 }
 
 .section1 {
