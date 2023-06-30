@@ -12108,7 +12108,7 @@ footer .form {
 }
 footer .formulario {
   margin: auto;
-  background-image: url(/assets/images/cartonsimple.jpg);
+  background-image: url(../../images/cartonsimple.jpg);
   padding: 2rem 1.3rem;
   border-radius: 1rem;
 }
@@ -12402,7 +12402,7 @@ header .navbar-brand img {
 }
 
 .section1 {
-  background-image: url(/assets/images/fondocartonsimple.jpg);
+  background-image: url(../../images/fondocartonsimple.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
