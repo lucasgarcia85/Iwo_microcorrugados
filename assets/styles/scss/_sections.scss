@@ -1,9 +1,13 @@
 .section1 {
-    background-image: url(../../images/fondocartonsimple.jpg);
+    background-image: linear-gradient( rgb(255 255 255 / 50%), rgba(129, 78, 23, 0.45) ),url(../../images/insumos.jpg);;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-attachment: fixed;
+        @include media-breakpoint-up(lg){
+            background-position: center;
+        }
+
+    
     padding-top: 11rem;
 
         @include media-breakpoint-up(sm){
@@ -22,6 +26,7 @@
 
     &_left {
         text-align: center;
+        text-shadow: 3px 3px 6px rgba(255, 253, 253, 0.89);
 
         @include media-breakpoint-up(lg) {
             width: 60%;
@@ -47,33 +52,122 @@
     }
 
     &_right {
+        text-align: center;
         @include media-breakpoint-up(lg) {
-            width: 40%;
+            width: 30%;
+            text-align: right;
         }
         img {
-            width: 90%;
+            width: 65%;
+            opacity: 0.9;
             border-radius: 20%;
         }
     }
 
 }
 
-.micro_tipos{
-    
+
+.quienes_somos{
+
     .tipo{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         text-align: justify;
+       
     }
   
-
 }
 
+
+
+.micro_tipos{
+
+    &>.container {
+        display: flex;
+        flex-direction: column;
+        @include media-breakpoint-up(lg) {
+            flex-direction: row;
+        }
+ 
+    }
+        
+    .tipo{
+        font-size: 1.5rem;
+        text-align: justify;
+        @include media-breakpoint-up(lg) {
+            width: 60%;
+            text-align: left;
+        }
+        
+    }
+
+    .tipo_img{
+        text-align: center;
+        height: 250px;
+
+        @include media-breakpoint-up(lg) {
+            width: 30%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5%;
+
+            @include media-breakpoint-up(sm) {
+                width: 80%;
+                text-align: center;
+                
+            }
+            @include media-breakpoint-up(lg) {
+                width: 70%;
+                
+            }
+        }
+    }
+
+}
+  
+
+
+
 .micro_montaje{
+
+    &>.container {
+        display: flex;
+        flex-direction: column;
+        @include media-breakpoint-up(lg) {
+            flex-direction: row;
+        }
+ 
+    }
     
     .montaje{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         text-align: justify;
 
+    }
+
+    .montaje_img{
+        text-align: center;
+        height: 250px;
+
+        @include media-breakpoint-up(lg) {
+            width: 30%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5%;
+
+            @include media-breakpoint-up(sm) {
+                width: 80%;
+                text-align: center;
+                
+            }
+            @include media-breakpoint-up(lg) {
+                width: 70%;
+                
+            }
+        }
     }
 }
 

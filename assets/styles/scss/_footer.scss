@@ -9,7 +9,10 @@ footer {
     ****************************************/
     .formulario {
         margin: auto;
-        background-image: url(../../images/cartonsimple.jpg);
+        background-image: linear-gradient(rgb(19 18 18 / 88%), rgb(129 78 23 / 48%)) ,url(../../images/simplefaz.png);
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position: center;
         padding: 2rem 1.3rem;
         border-radius: 1rem;
         @include media-breakpoint-up(lg) {
@@ -30,12 +33,12 @@ footer {
         .form-group {
             margin: auto;
             margin-bottom: 2.2rem;
-            width: 80%;
+            width: 85%;
                 @include media-breakpoint-up(md) {
-                    width: 85%;
+                    width: 88%;
                 }
                 @include media-breakpoint-up(lg) {
-                    width: 90%;
+                    width: 92%;
                 }
 
     
@@ -65,11 +68,15 @@ footer {
                 height: 178px;
     
             }
+
+            // .options{
+            //     display: inline-block;
+            // }
     
         }
 
         .botonform{
-            width: 80%;
+            width: 85%;
             margin: auto;
 
             .btn{
