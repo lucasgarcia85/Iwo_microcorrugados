@@ -126,13 +126,13 @@ footer {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    background: $color-blue-main;
+                    background: $color-menu;
                     color: #fff;
                     border-radius: 50%;
                     text-decoration: none;
     
                     &:hover {
-                        background-color: $color-blue-light;
+                        background-color: $color-menu-hover;
                         transform: translateY(-0.5rem);
                     }
     
@@ -150,8 +150,8 @@ footer {
         align-items: center;
         justify-content: center;
         font-size: 1.3rem;
-        background-color: black;
-        color: #fff;
+        background-color: $color-bg-main;
+        color: $color-menu;
         height: 50px;
         p {
             margin: 0;

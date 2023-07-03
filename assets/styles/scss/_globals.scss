@@ -59,12 +59,12 @@ body {
         position: absolute;
         left: 0;
         transition: all 0.3s ease;
-        background-color: $color-blue-dark;
+        background-color: $color-menu-hover;
         z-index: 9;
     }
     
     &.btn-primary {
-        background: $color-blue-main;
+        background: $color-menu;
         &:hover {
             &:after {
                 width: 100%;
