@@ -5,12 +5,12 @@
 
 
 .section1 {
-    height: 35rem;
+    
     background-image: linear-gradient( rgb(255 255 255 / 50%), rgba(129, 78, 23, 0.45) ),url(../../images/insumos.jpg);;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
-        @include media-breakpoint-up(lg){
+        @include media-breakpoint-up(md){
             background-position: center;
             height: auto;
         }
@@ -121,8 +121,9 @@
 
     .tipo_img{
         
-        background-image: url(../../images/microcorrugado.jpg);
+        background-image: url(../../images/plancha.jpg);
         background-position: center;
+        background-size: cover;
         width: 85%;
         height: 340px;
         align-self: center;

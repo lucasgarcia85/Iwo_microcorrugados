@@ -12427,14 +12427,13 @@ header .navbar-brand img {
 }
 
 .section1 {
-  height: 35rem;
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(129, 78, 23, 0.45)), url(../../images/insumos.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
   padding-top: 11rem;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .section1 {
     background-position: center;
     height: auto;
@@ -12529,8 +12528,9 @@ header .navbar-brand img {
   margin-top: 4rem;
 }
 .micro_tipos .tipo_img {
-  background-image: url(../../images/microcorrugado.jpg);
+  background-image: url(../../images/plancha.jpg);
   background-position: center;
+  background-size: cover;
   width: 85%;
   height: 340px;
   align-self: center;
