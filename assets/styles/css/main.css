@@ -12103,7 +12103,7 @@ h3, .h3 {
   }
 }
 footer {
-  padding-top: 4rem;
+  padding-top: 2rem;
   /*CONTACT FORM
   ****************************************/
 }
@@ -12112,7 +12112,7 @@ footer .form {
 }
 footer .formulario {
   margin: auto;
-  background-image: linear-gradient(rgba(19, 18, 18, 0.65), rgba(129, 78, 23, 0.21)), url(../../images/plancha.jpg);
+  background-image: linear-gradient(rgba(19, 18, 18, 0.65), rgba(129, 78, 23, 0.21));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -12121,7 +12121,7 @@ footer .formulario {
 }
 @media (min-width: 992px) {
   footer .formulario {
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
   }
 }
 footer .formulario .error-msg {
@@ -12427,6 +12427,7 @@ header .navbar-brand img {
 }
 
 .section1 {
+  height: 35rem;
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(129, 78, 23, 0.45)), url(../../images/insumos.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -12436,6 +12437,7 @@ header .navbar-brand img {
 @media (min-width: 992px) {
   .section1 {
     background-position: center;
+    height: auto;
   }
 }
 @media (min-width: 576px) {
@@ -12498,9 +12500,12 @@ header .navbar-brand img {
   text-align: justify;
 }
 
+.micro_tipos {
+  padding: 4rem 0;
+}
 .micro_tipos > .container {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
   flex-direction: column;
 }
 @media (min-width: 992px) {
@@ -12517,7 +12522,11 @@ header .navbar-brand img {
 @media (min-width: 992px) {
   .micro_tipos .tipo {
     width: 59%;
+    padding: 2rem 3rem 2rem 0;
   }
+}
+.micro_tipos .tipo .tipoB {
+  margin-top: 4rem;
 }
 .micro_tipos .tipo_img {
   background-image: url(../../images/microcorrugado.jpg);
@@ -12533,9 +12542,12 @@ header .navbar-brand img {
   }
 }
 
+.micro_montaje {
+  padding: 3rem 0;
+}
 .micro_montaje > .container {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
   flex-direction: column;
 }
 @media (min-width: 992px) {
@@ -12552,6 +12564,7 @@ header .navbar-brand img {
 @media (min-width: 992px) {
   .micro_montaje .montaje {
     width: 59%;
+    padding: 2rem 0rem 2rem 2rem;
   }
 }
 .micro_montaje .montaje_img {

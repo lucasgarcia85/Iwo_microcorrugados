@@ -1,5 +1,5 @@
 footer {
-    padding-top: 4rem;
+    padding-top: 2rem;
 
     .form {
         margin-bottom: 4rem;
@@ -9,14 +9,14 @@ footer {
     ****************************************/
     .formulario {
         margin: auto;
-        background-image: linear-gradient(rgb(19 18 18 / 65%), rgb(129 78 23 / 21%)) ,url(../../images/plancha.jpg);
+        background-image: linear-gradient(rgb(19 18 18 / 65%), rgb(129 78 23 / 21%)); // ,url(../../images/plancha.jpg);
         background-repeat:no-repeat;
         background-size: cover;
         background-position: center;
         padding: 2rem 1.3rem;
         border-radius: 1rem;
         @include media-breakpoint-up(lg) {
-            padding: 3rem 2rem;
+            padding: 4rem 2rem;
         }
     
         .error-msg {

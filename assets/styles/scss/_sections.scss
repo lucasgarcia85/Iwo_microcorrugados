@@ -5,12 +5,14 @@
 
 
 .section1 {
+    height: 35rem;
     background-image: linear-gradient( rgb(255 255 255 / 50%), rgba(129, 78, 23, 0.45) ),url(../../images/insumos.jpg);;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
         @include media-breakpoint-up(lg){
             background-position: center;
+            height: auto;
         }
 
     
@@ -86,10 +88,11 @@
 
 
 .micro_tipos{
+    padding: 4rem 0;
 
     &>.container {
         display: flex;
-        gap: 20px;
+        gap: 2rem;
         flex-direction: column;
         @include media-breakpoint-up(lg) {
             flex-direction: row;
@@ -98,18 +101,26 @@
     }
         
     .tipo{
+        
         font-size: 1.5rem;
         text-align: justify;
         width: 100%;
         height: auto;
         @include media-breakpoint-up(lg) {
             width: 59%;
+            padding: 2rem 3rem 2rem 0;
+        }
+
+        .tipoB{
+            margin-top: 4rem;
+            
         }
         
         
     }
 
     .tipo_img{
+        
         background-image: url(../../images/microcorrugado.jpg);
         background-position: center;
         width: 85%;
@@ -119,6 +130,7 @@
 
         @include media-breakpoint-up(lg) {
             width: 40%;
+            
         }
     }
 
@@ -128,10 +140,11 @@
 
 
 .micro_montaje{
+    padding: 3rem 0;
 
     &>.container {
         display: flex;
-        gap:20px;
+        gap:2rem;
         flex-direction: column;
         @include media-breakpoint-up(lg) {
             flex-direction: row-reverse;
@@ -140,12 +153,14 @@
     }
     
     .montaje{
+        
         font-size: 1.5rem;
         text-align: justify;
         width: 100%;
         height: auto;
         @include media-breakpoint-up(lg) {
             width: 59%;
+            padding: 2rem 0rem 2rem 2rem;
         }
 
     }
@@ -158,9 +173,11 @@
         height: 340px;
         align-self: center;
         border-radius: 1rem;
+        
 
         @include media-breakpoint-up(lg) {
             width: 40%;
+            
         }
     }
 }
