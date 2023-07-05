@@ -9,7 +9,7 @@ footer {
     ****************************************/
     .formulario {
         margin: auto;
-        background-image: linear-gradient(rgb(19 18 18 / 88%), rgb(129 78 23 / 48%)) ,url(../../images/simplefaz.png);
+        background-image: linear-gradient(rgb(19 18 18 / 65%), rgb(129 78 23 / 21%)) ,url(../../images/plancha.jpg);
         background-repeat:no-repeat;
         background-size: cover;
         background-position: center;
@@ -144,16 +144,34 @@ footer {
         }
     
     }
+    .info{
+
+    text-align: center;
+
+        h3{
+            i{
+                margin-right:0.7rem;
+                font-size: 2.4rem;
+            }
+        }
+
+        p{
+            font-size: 2rem;
+        }
+    }
     
     .copyright {
+        margin-top: 1rem;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        font-weight: bold;
         background-color: $color-bg-main;
         color: $color-menu;
         height: 50px;
-        p {
+        .copy {
             margin: 0;
         }
     

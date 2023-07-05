@@ -1,3 +1,9 @@
+.micro_tipos, .micro_montajes{
+    background-color: $color-bg-main;
+
+}
+
+
 .section1 {
     background-image: linear-gradient( rgb(255 255 255 / 50%), rgba(129, 78, 23, 0.45) ),url(../../images/insumos.jpg);;
     background-size: cover;
@@ -83,6 +89,7 @@
 
     &>.container {
         display: flex;
+        gap: 20px;
         flex-direction: column;
         @include media-breakpoint-up(lg) {
             flex-direction: row;
@@ -93,34 +100,25 @@
     .tipo{
         font-size: 1.5rem;
         text-align: justify;
+        width: 100%;
+        height: auto;
         @include media-breakpoint-up(lg) {
-            width: 60%;
-            text-align: left;
+            width: 59%;
         }
+        
         
     }
 
     .tipo_img{
-        text-align: center;
-        height: 250px;
+        background-image: url(../../images/microcorrugado.jpg);
+        background-position: center;
+        width: 85%;
+        height: 340px;
+        align-self: center;
+        border-radius: 1rem;
 
         @include media-breakpoint-up(lg) {
-            width: 30%;
-        }
-        img {
-            width: 100%;
-            height: 100%;
-            border-radius: 5%;
-
-            @include media-breakpoint-up(sm) {
-                width: 80%;
-                text-align: center;
-                
-            }
-            @include media-breakpoint-up(lg) {
-                width: 70%;
-                
-            }
+            width: 40%;
         }
     }
 
@@ -133,9 +131,10 @@
 
     &>.container {
         display: flex;
+        gap:20px;
         flex-direction: column;
         @include media-breakpoint-up(lg) {
-            flex-direction: row;
+            flex-direction: row-reverse;
         }
  
     }
@@ -143,30 +142,25 @@
     .montaje{
         font-size: 1.5rem;
         text-align: justify;
+        width: 100%;
+        height: auto;
+        @include media-breakpoint-up(lg) {
+            width: 59%;
+        }
 
     }
 
     .montaje_img{
-        text-align: center;
-        height: 250px;
+        background-image: url(../../images/montaje2.jpg);
+        background-position: bottom;
+        background-size: cover;
+        width: 85%;
+        height: 340px;
+        align-self: center;
+        border-radius: 1rem;
 
         @include media-breakpoint-up(lg) {
-            width: 30%;
-        }
-        img {
-            width: 100%;
-            height: 100%;
-            border-radius: 5%;
-
-            @include media-breakpoint-up(sm) {
-                width: 80%;
-                text-align: center;
-                
-            }
-            @include media-breakpoint-up(lg) {
-                width: 70%;
-                
-            }
+            width: 40%;
         }
     }
 }

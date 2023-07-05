@@ -17,6 +17,13 @@ html {
     font-style: normal;
 }
 
+// hr{
+//     margin: 10px auto;
+//     width: 90%;
+//     height: 2px;
+//     color:$color-main;
+// }
+
 body {
     
     font-family: $font-family-main;
@@ -147,6 +154,9 @@ h2 {
     @include media-breakpoint-up(md) {
         font-size: 3rem;
     }
+}
+h3{
+    font-size: 2rem;
 }
 
 

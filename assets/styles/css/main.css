@@ -12056,6 +12056,10 @@ h2, .h2 {
   }
 }
 
+h3, .h3 {
+  font-size: 2rem;
+}
+
 .lg-sub-html p {
   font-size: 1.5rem;
 }
@@ -12108,7 +12112,7 @@ footer .form {
 }
 footer .formulario {
   margin: auto;
-  background-image: linear-gradient(rgba(19, 18, 18, 0.88), rgba(129, 78, 23, 0.48)), url(../../images/simplefaz.png);
+  background-image: linear-gradient(rgba(19, 18, 18, 0.65), rgba(129, 78, 23, 0.21)), url(../../images/plancha.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -12218,16 +12222,29 @@ footer .redes .social-links li a:hover {
 footer .redes .social-links li a i {
   font-size: 2.4rem;
 }
+footer .info {
+  text-align: center;
+}
+footer .info h3 i, footer .info .h3 i {
+  margin-right: 0.7rem;
+  font-size: 2.4rem;
+}
+footer .info p {
+  font-size: 2rem;
+}
 footer .copyright {
+  margin-top: 1rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   background-color: #ebebeb;
   color: rgb(135, 25, 25);
   height: 50px;
 }
-footer .copyright p {
+footer .copyright .copy {
   margin: 0;
 }
 footer .footer-widget {
@@ -12405,6 +12422,10 @@ header .navbar-brand img {
   background-color: #471405;
 }
 
+.micro_tipos, .micro_montajes {
+  background-color: #ebebeb;
+}
+
 .section1 {
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(129, 78, 23, 0.45)), url(../../images/insumos.jpg);
   background-size: cover;
@@ -12479,6 +12500,7 @@ header .navbar-brand img {
 
 .micro_tipos > .container {
   display: flex;
+  gap: 20px;
   flex-direction: column;
 }
 @media (min-width: 992px) {
@@ -12489,75 +12511,61 @@ header .navbar-brand img {
 .micro_tipos .tipo {
   font-size: 1.5rem;
   text-align: justify;
+  width: 100%;
+  height: auto;
 }
 @media (min-width: 992px) {
   .micro_tipos .tipo {
-    width: 60%;
-    text-align: left;
+    width: 59%;
   }
 }
 .micro_tipos .tipo_img {
-  text-align: center;
-  height: 250px;
+  background-image: url(../../images/microcorrugado.jpg);
+  background-position: center;
+  width: 85%;
+  height: 340px;
+  align-self: center;
+  border-radius: 1rem;
 }
 @media (min-width: 992px) {
   .micro_tipos .tipo_img {
-    width: 30%;
-  }
-}
-.micro_tipos .tipo_img img {
-  width: 100%;
-  height: 100%;
-  border-radius: 5%;
-}
-@media (min-width: 576px) {
-  .micro_tipos .tipo_img img {
-    width: 80%;
-    text-align: center;
-  }
-}
-@media (min-width: 992px) {
-  .micro_tipos .tipo_img img {
-    width: 70%;
+    width: 40%;
   }
 }
 
 .micro_montaje > .container {
   display: flex;
+  gap: 20px;
   flex-direction: column;
 }
 @media (min-width: 992px) {
   .micro_montaje > .container {
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
 }
 .micro_montaje .montaje {
   font-size: 1.5rem;
   text-align: justify;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 992px) {
+  .micro_montaje .montaje {
+    width: 59%;
+  }
 }
 .micro_montaje .montaje_img {
-  text-align: center;
-  height: 250px;
+  background-image: url(../../images/montaje2.jpg);
+  background-position: bottom;
+  background-size: cover;
+  width: 85%;
+  height: 340px;
+  align-self: center;
+  border-radius: 1rem;
 }
 @media (min-width: 992px) {
   .micro_montaje .montaje_img {
-    width: 30%;
-  }
-}
-.micro_montaje .montaje_img img {
-  width: 100%;
-  height: 100%;
-  border-radius: 5%;
-}
-@media (min-width: 576px) {
-  .micro_montaje .montaje_img img {
-    width: 80%;
-    text-align: center;
-  }
-}
-@media (min-width: 992px) {
-  .micro_montaje .montaje_img img {
-    width: 70%;
+    width: 40%;
   }
 }
 
