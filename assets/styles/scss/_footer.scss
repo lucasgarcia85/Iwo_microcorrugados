@@ -145,18 +145,28 @@ footer {
     
     }
     .info{
+        text-align: center;
 
-    text-align: center;
+        @include media-breakpoint-up(sm) {
+            width: 50%;
+            margin: auto;
+            text-align: left;
+        }
+
 
         h3{
             i{
                 margin-right:0.7rem;
-                font-size: 2.4rem;
+                font-size: 2.1rem;
             }
         }
 
         p{
-            font-size: 2rem;
+            font-size: 1.8rem;
+
+            @include media-breakpoint-up(sm) {
+                margin-left: 3rem;
+            }
         }
     }
     
