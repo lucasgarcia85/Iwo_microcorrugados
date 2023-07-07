@@ -12437,6 +12437,9 @@ header .navbar-brand img {
 .micro_tipos, .micro_montajes {
   background-color: #ebebeb;
 }
+.micro_tipos ul, .micro_montajes ul {
+  list-style-image: url("../../images/ok (1).png");
+}
 
 .section1 {
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(129, 78, 23, 0.35)), url(../../images/insumos.jpg);
@@ -12542,6 +12545,9 @@ header .navbar-brand img {
 
 .micro_montaje {
   padding: 3rem 0;
+}
+.micro_montaje ul {
+  list-style-image: url("../../images/ok (1).png");
 }
 .micro_montaje > .container {
   display: flex;

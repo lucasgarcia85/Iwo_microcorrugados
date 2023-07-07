@@ -1,6 +1,29 @@
 .micro_tipos, .micro_montajes{
     background-color: $color-bg-main;
 
+    ul {
+        list-style-image: url("../../images/ok\ \(1\).png");
+
+        
+    }
+                
+            
+            //     li::before {
+            //         content: '';
+            //         display: inline-block;
+            //         height: 20px;
+            //         width: 20px;
+            //         background-size: contain;
+            //         background-image: url("../../images/ok\ \(1\).png");
+            //         margin-right: 5px;
+            //         }
+            //     }
+            // ul {
+            //     list-style-image: url("../../images/ok\ \(1\).png");
+
+                
+            // }
+
 }
 
 
@@ -95,6 +118,8 @@
 .micro_tipos{
     padding: 4rem 0;
 
+   
+
     &>.container {
         display: flex;
         gap: 2rem;
@@ -118,6 +143,8 @@
 
         .tipoB{
             margin-top: 4rem;
+
+           
             
         }
         
@@ -147,6 +174,12 @@
 
 .micro_montaje{
     padding: 3rem 0;
+
+    ul {
+        list-style-image: url("../../images/ok\ \(1\).png");
+
+        
+    }
 
     &>.container {
         display: flex;
