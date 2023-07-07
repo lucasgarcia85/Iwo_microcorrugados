@@ -12103,7 +12103,8 @@ h3, .h3 {
   }
 }
 footer {
-  padding-top: 2rem;
+  padding-top: 5rem;
+  background-color: #ebebeb;
   /*CONTACT FORM
   ****************************************/
 }
@@ -12245,14 +12246,14 @@ footer .info p {
   }
 }
 footer .copyright {
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
   font-weight: bold;
-  background-color: #ebebeb;
+  background-color: white;
   color: rgb(135, 25, 25);
   height: 50px;
 }
@@ -12434,11 +12435,13 @@ header .navbar-brand img {
   background-color: #471405;
 }
 
-.micro_tipos, .micro_montajes {
-  background-color: #ebebeb;
+.micro_tipos ul, .micro_montaje ul {
+  list-style: none;
 }
-.micro_tipos ul, .micro_montajes ul {
-  list-style-image: url("../../images/ok (1).png");
+.micro_tipos ul i, .micro_montaje ul i {
+  font-size: 1.9rem;
+  color: rgb(135, 25, 25);
+  margin-right: 0.5rem;
 }
 
 .section1 {
@@ -12501,6 +12504,7 @@ header .navbar-brand img {
 }
 
 .micro_tipos {
+  background-color: #ebebeb;
   padding: 4rem 0;
 }
 .micro_tipos > .container {
@@ -12529,7 +12533,7 @@ header .navbar-brand img {
   margin-top: 4rem;
 }
 .micro_tipos .tipo_img {
-  background-image: url(../../images/plancha.jpg);
+  background-image: url(../../images/microsimplefaz.png);
   background-position: center;
   background-size: cover;
   width: 85%;
@@ -12545,9 +12549,6 @@ header .navbar-brand img {
 
 .micro_montaje {
   padding: 3rem 0;
-}
-.micro_montaje ul {
-  list-style-image: url("../../images/ok (1).png");
 }
 .micro_montaje > .container {
   display: flex;
