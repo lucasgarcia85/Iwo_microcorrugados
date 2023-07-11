@@ -105,7 +105,7 @@
         <div class="tipo">
           <div class="tipoE">
             <h2>Microcorrugado Onda E</h2>
-            <p>Material versátil y resistente utilizado en una amplia gama de aplicaciones. Se caracteriza por sus ondas regulares y su estructura rígida. Flauta con una altura aproximada de 1.6 mm y una longitud de onda de alrededor de 1.4 mm.</p>
+            <p>Fabricamos un material versátil y resistente utilizado en una amplia gama de aplicaciones. Se caracteriza por sus ondas regulares y su estructura rígida. Flauta con una altura aproximada de 1.6 mm.</p>
             <ul>
               <li><i class="fa-regular fa-circle-check"></i>Resistencia y durabilidad</li>
               <li><i class="fa-regular fa-circle-check"></i>Ligereza</li>
@@ -114,11 +114,10 @@
           </div>
           <div class="tipoB">
             <h2>Microcorrugado Onda B</h2>
-            <p>Material liviano pero robusto que se utiliza ampliamente en la industria del embalaje. Presenta ondas más pequeñas que otros microcorrugados, ideal para aplicaciones que requieren una mayor resistencia a la compresión. Flauta con una altura aproximada de 1.6 mm y una longitud de onda de alrededor de 3.2 mm. </p>
+            <p>Fabricamos un material liviano pero robusto que se utiliza ampliamente en la industria del embalaje. Presenta ondas más pequeñas que otros microcorrugados, ideal para aplicaciones que requieren una mayor resistencia a la compresión. Flauta con una altura aproximada de 2.6 mm.</p>
             <ul>
               <li><i class="fa-regular fa-circle-check"></i>Resistencia y rigidez</li>
               <li><i class="fa-regular fa-circle-check"></i>Protección del contenido</li>
-              <li><i class="fa-regular fa-circle-check"></i>Espesor reducido</li>
             </ul>
           </div>
         </div>
@@ -134,7 +133,7 @@
       <div class="container">
         <div class="montaje">
           <h2>Montaje sobre cartulina</h2>
-          <p>El proceso lo realizamos con operarios calificados mediante máquina de línea automática de última generación cuya tecnología permite una manipulación precisa y eficiente de los materiales aplicando los adhesivos necesarios y asegurando una unión firme y segura entre la cartulina y el sustrato correspondiente.Venjata del automatizado:
+          <p>El proceso lo realizamos con operarios calificados mediante máquina de línea automática de última generación cuya tecnología permite una manipulación precisa y eficiente de los materiales aplicando los adhesivos necesarios y asegurando una unión firme y segura entre la cartulina y el sustrato correspondiente. Ventajas del automatizado:
           </p>
           <ul>
             <li><i class="fa-regular fa-circle-check"></i>Mayor eficiencia productiva.</li>
@@ -170,7 +169,7 @@
                     <div id="name-error" class="error-msg">Nombre inválido</div>
                   </div>
                   <div class="form-group">
-                    <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="Teléfono*">
+                    <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="Teléfono">
                     <div id="telephone-error" class="error-msg">Teléfono inválido</div>
                   </div>
                   <div class="form-group">
@@ -178,7 +177,7 @@
                     <div id="email-error" class="error-msg">E-mail inválido</div>
                   </div>
                   <div class="form-group">
-                    <input type="asunto" class="form-control" id="asunto" name="asunto" placeholder="Asunto*">
+                    <input type="asunto" class="form-control" id="emailsubject" name="emailsubject" placeholder="Asunto*">
                     <div id="email-error" class="error-msg">E-mail inválido</div>
                     
                   </div>
@@ -243,7 +242,7 @@
               <h3><i class="fa-solid fa-location-dot"></i>Ubicacion</h3>
               <p>San Justo</p>
               <h3><i class="fa-solid fa-envelope"></i>Correo electrónico</h3>
-              <p>info@iwomicrocorrugado.com.ar</p>
+              <a href="mailto:iewcor@hotmail.com">iewcor@hotmail.com</a>
 
             </div>
 
@@ -279,7 +278,7 @@
       },
       telephone: {
         presence: {
-          allowEmpty: false
+          allowEmpty: true
         }
       },
       email: {
@@ -288,6 +287,10 @@
         },
         email: true
       },
+      emailsubject: {
+        presence: {
+          allowEmpty: false
+      }
       message: {
         presence: {
           allowEmpty: false
@@ -302,6 +305,7 @@
         name: form.elements.name.value,
         telephone: form.elements.telephone.value,
         email: form.elements.email.value,
+        emailsubject: form.elements.subject.value,
         message: form.elements.message.value
       };
 

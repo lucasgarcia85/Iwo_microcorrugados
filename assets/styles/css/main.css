@@ -12103,7 +12103,7 @@ h3, .h3 {
   }
 }
 footer {
-  padding-top: 5rem;
+  padding-top: 4rem;
   background-color: #ebebeb;
   /*CONTACT FORM
   ****************************************/
@@ -12237,11 +12237,11 @@ footer .info h3 i, footer .info .h3 i {
   margin-right: 0.7rem;
   font-size: 2.1rem;
 }
-footer .info p {
+footer .info p, footer .info a {
   font-size: 1.8rem;
 }
 @media (min-width: 576px) {
-  footer .info p {
+  footer .info p, footer .info a {
     margin-left: 3rem;
   }
 }
@@ -12498,6 +12498,9 @@ header .navbar-brand img {
   }
 }
 
+.quienes_somos {
+  margin-top: 1rem;
+}
 .quienes_somos .tipo {
   font-size: 1.5rem;
   text-align: justify;
@@ -12505,7 +12508,6 @@ header .navbar-brand img {
 
 .micro_tipos {
   background-color: #ebebeb;
-  padding: 4rem 0;
 }
 .micro_tipos > .container {
   display: flex;
