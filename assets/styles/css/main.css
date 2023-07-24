@@ -12445,15 +12445,21 @@ header .navbar-brand img {
 }
 
 .section1 {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(129, 78, 23, 0.35)), url(../../images/insumos.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(129, 78, 23, 0.35)), url(../../images/fondo4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: 7% 50%;
   padding-top: 11rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .section1 {
     background-position: center;
+    height: auto;
+  }
+}
+@media (min-width: 992px) {
+  .section1 {
+    background-position: center 25%;
     height: auto;
   }
 }

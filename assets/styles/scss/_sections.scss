@@ -14,33 +14,36 @@
 }
 
 
+
 .section1 {
     
-    background-image: linear-gradient( rgb(255 255 255 / 50%), rgba(129, 78, 23, 0.35) ),url(../../images/insumos.jpg);;
+    background-image: linear-gradient( rgb(255 255 255 / 50%), rgba(129, 78, 23, 0.35) ),url(../../images/fondo4.jpg);;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center bottom;
-        @include media-breakpoint-up(md){
+    background-position: 7% 50%;
+        @include media-breakpoint-up(sm){
             background-position: center;
+            height: auto;
+        }
+        @include media-breakpoint-up(lg){
+            background-position: center 25%;
             height: auto;
         }
 
     
-    padding-top: 11rem;
+        padding-top: 11rem;
 
-        @include media-breakpoint-up(sm){
-            padding-top:5rem;
-        }
-        @include media-breakpoint-up(xl){
-            padding-top:8rem;
-        }
+            @include media-breakpoint-up(sm){
+                padding-top:5rem;
+            }
+            @include media-breakpoint-up(xl){
+                padding-top:8rem;
+            }
 
     &>.container {
         display: flex;
         flex-direction: column;
-        // @include media-breakpoint-up(lg) {
-        //     flex-direction: row;
-        // }
+        
 
         
     }
@@ -74,6 +77,7 @@
         }
     }
 
+    
 }
 
 
