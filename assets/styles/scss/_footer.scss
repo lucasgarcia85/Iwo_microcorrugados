@@ -83,11 +83,19 @@ footer {
         }
     
         .captcha{
-            display: inline-block;
-            padding-right: 2rem;
+            display: inline;
+            padding-right: 1.2rem;
 
             #respuesta {
-                width: 5rem;
+                width: 9rem;
+                border: none;
+                border-radius: 0.6rem;
+                text-align: center;
+            }
+            
+            i{
+                font-size: 1.9rem;
+                margin-left: 1rem;
             }
         }
     }

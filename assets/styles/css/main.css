@@ -12177,11 +12177,18 @@ footer .formulario .botonform .btn {
   min-width: 180px;
 }
 footer .formulario .captcha {
-  display: inline-block;
-  padding-right: 2rem;
+  display: inline;
+  padding-right: 1.2rem;
 }
 footer .formulario .captcha #respuesta {
-  width: 5rem;
+  width: 9rem;
+  border: none;
+  border-radius: 0.6rem;
+  text-align: center;
+}
+footer .formulario .captcha i {
+  font-size: 1.9rem;
+  margin-left: 1rem;
 }
 footer .logo-footer {
   margin-top: 4rem;
@@ -12453,7 +12460,7 @@ header .navbar-brand img {
 }
 
 .section1 {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(129, 78, 23, 0.35)), url(../../images/fondo4.jpg);
+  background-image: linear-gradient(182deg, rgba(255, 255, 255, 0.4), rgba(129, 78, 23, 0.4)), url(../../images/fondo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 7% 50%;
