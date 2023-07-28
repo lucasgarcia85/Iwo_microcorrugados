@@ -82,6 +82,14 @@ footer {
             }
         }
     
+        .captcha{
+            display: inline-block;
+            padding-right: 2rem;
+
+            #respuesta {
+                width: 5rem;
+            }
+        }
     }
     
     
@@ -143,6 +151,7 @@ footer {
     
     }
     .info{
+        padding-top: 2rem;
         text-align: center;
 
         @include media-breakpoint-up(sm) {
