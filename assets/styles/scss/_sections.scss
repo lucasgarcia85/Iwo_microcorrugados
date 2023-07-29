@@ -18,7 +18,7 @@
 .section1 {
     
     // background-image: linear-gradient( rgb(255 255 255 / 50%), rgba(129, 78, 23, 0.35) ),url(../../images/fondo4.jpg);
-    background-image: linear-gradient(182deg,rgba(255, 255, 255, 30%), rgba(129, 78, 23, 30%)), url(../../images/fondo.jpg);
+    background-image: linear-gradient(182deg,rgba(255, 255, 255, 40%), rgba(129, 78, 23, 30%)), url(../../images/fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 7% 50%;
@@ -51,7 +51,7 @@
 
     &_left {
         text-align: center;
-        text-shadow: 1px 1px 2px rgba(255, 253, 253, 0.59);
+        text-shadow: 2px 1px 2px rgba(255, 253, 253, 0.59);
 
         @include media-breakpoint-up(lg) {
             width: 70%;
