@@ -205,37 +205,32 @@ footer {
     .footer-widget {
         position: fixed;
         left: 2rem;
-        bottom: 2rem;
+        bottom: 1.5rem;
         z-index: 100;
-        width: 6rem;
-        height: 6rem;
         animation: bounce-in-top 1.1s both;
         animation-delay: 1s;
-    
-        a {
-            box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
-            color: #fff;
-            position: absolute;
-            background-color: $color-whatsapp;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            transition: all .3s ease;
-            z-index: 9999;
-            padding: 10px;
-    
-            &:hover {
-                background-color: #009688;
-                color: #fff;
+        transition: all ease .6s;
+
+            // @include media-breakpoint-down(md) {
+            //     animation-name: shake;
+            //     animation-duration: 1.5s;
+            //     animation-iteration-count: infinite;
+            // }
+
+            @include media-breakpoint-up(md) {
+                &:hover {
+                    scale: 1.2;
+                }
             }
     
+        a{    
             img {
-                height: 40px;
-                margin: 0;
-                display: block;
-                position: relative;
-                padding: 0;
-                width: 40px;
+                width: 60px;
+                @include media-breakpoint-up(md) {
+                    width: 70px;
+                }
+
+                
             }
         }
     }
@@ -243,8 +238,8 @@ footer {
     .back-to-top {
         color: #fff;
         position: fixed;
-        right: 1.5rem;
-        bottom: 2.2rem;
+        right: 1.6rem;
+        bottom: 2.3rem;
         transition: all .3s ease-in-out;
         background-color: #fff;
         border: 2px solid $color-blue-main;

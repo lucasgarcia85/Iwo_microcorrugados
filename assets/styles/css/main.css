@@ -12278,42 +12278,30 @@ footer .copyright .copy {
 footer .footer-widget {
   position: fixed;
   left: 2rem;
-  bottom: 2rem;
+  bottom: 1.5rem;
   z-index: 100;
-  width: 6rem;
-  height: 6rem;
   animation: bounce-in-top 1.1s both;
   animation-delay: 1s;
+  transition: all ease 0.6s;
 }
-footer .footer-widget a {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  color: #fff;
-  position: absolute;
-  background-color: #1fca1f;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-  z-index: 9999;
-  padding: 10px;
-}
-footer .footer-widget a:hover {
-  background-color: #009688;
-  color: #fff;
+@media (min-width: 768px) {
+  footer .footer-widget:hover {
+    scale: 1.2;
+  }
 }
 footer .footer-widget a img {
-  height: 40px;
-  margin: 0;
-  display: block;
-  position: relative;
-  padding: 0;
-  width: 40px;
+  width: 60px;
+}
+@media (min-width: 768px) {
+  footer .footer-widget a img {
+    width: 70px;
+  }
 }
 footer .back-to-top {
   color: #fff;
   position: fixed;
-  right: 1.5rem;
-  bottom: 2.2rem;
+  right: 1.6rem;
+  bottom: 2.3rem;
   transition: all 0.3s ease-in-out;
   background-color: #fff;
   border: 2px solid #20396f;
@@ -12460,7 +12448,7 @@ header .navbar-brand img {
 }
 
 .section1 {
-  background-image: linear-gradient(182deg, rgba(255, 255, 255, 0.4), rgba(129, 78, 23, 0.4)), url(../../images/fondo.jpg);
+  background-image: linear-gradient(182deg, rgba(255, 255, 255, 0.3), rgba(129, 78, 23, 0.3)), url(../../images/fondo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 7% 50%;
@@ -12494,7 +12482,7 @@ header .navbar-brand img {
 }
 .section1_left {
   text-align: center;
-  text-shadow: 1px 1px 1px rgba(255, 253, 253, 0.49);
+  text-shadow: 1px 1px 2px rgba(255, 253, 253, 0.59);
 }
 @media (min-width: 992px) {
   .section1_left {
@@ -12510,7 +12498,7 @@ header .navbar-brand img {
   margin-bottom: 13px;
   padding: 7px 10px;
   border-radius: 6px;
-  background-color: hsla(0deg, 0%, 100%, 0.39);
+  background-color: hsla(0deg, 0%, 100%, 0.49);
   color: #000;
 }
 @media (min-width: 992px) {
