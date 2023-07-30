@@ -142,7 +142,7 @@ h2 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.3rem;
     color: black;
     @include media-breakpoint-up(md) {
         font-size: 4.5rem;
@@ -154,6 +154,10 @@ h2 {
     @include media-breakpoint-up(md) {
         font-size: 3rem;
     }
+    @include media-breakpoint-down(sm) {
+        text-align: center;
+    }
+
 }
 h3{
     font-size: 2rem;
