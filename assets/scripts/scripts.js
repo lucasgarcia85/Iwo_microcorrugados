@@ -85,4 +85,12 @@ AOS.init();
             const respuestaInput = document.getElementById('respuesta');
             respuestaInput.addEventListener('input', validarRespuesta); // Add event listener for input changes in the answer
         };
+
+        
+        window.onresize = function() {
+        if (window.innerWidth <= 576) {
+            document.getElementById('back-to-top-id').href = "#main";
+        }
+    }
+
     
