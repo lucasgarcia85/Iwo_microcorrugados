@@ -16,11 +16,11 @@ $telephone = $_POST['telephone'];
 $email = $_POST['email'];
 $emailsubject = $_POST['emailsubject'];
 $message = $_POST['message'];
-$subject = 'Mensaje recibido desde www.netscom.com.ar';
+$subject = 'Mensaje recibido desde www.iwomicrorrugado.com.ar';
 
-$recaptcha_secret = "6Lc70vslAAAAAERIlmrHNxMCAOaTl040ezNmQdWR"; //Add secret key
-$response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$recaptcha_secret."&response=".$_POST['g-recaptcha-response']);
-$response = json_decode($response, true);
+// $recaptcha_secret = "6Lc70vslAAAAAERIlmrHNxMCAOaTl040ezNmQdWR"; //Add secret key
+// $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$recaptcha_secret."&response=".$_POST['g-recaptcha-response']);
+// $response = json_decode($response, true);
 
 if( empty(trim($name)) ) $name = 'anonimo';
 if( empty(trim($service)) ) $service = 'El Usuario no seleccionó ningún servicio';
@@ -38,15 +38,15 @@ try {
     //Server setting
     $mailer->SMTPDebug = 0;
     $mailer->isSMTP();
-    $mailer->Host = 'smtp.netscom.com.ar';
+    $mailer->Host = 'smtp.iwomicrocorrugado.com.ar';
     $mailer->SMTPAuth = false;  
-    $mailer->Username = 'info@netscom.com.ar';
-    $mailer->Password = 'N3t5C0m2o2I';                          
-    $mailer->Port = 25;
+    $mailer->Username = 'info@iwomicrocorrugado.com.ar';
+    $mailer->Password = 'Ivo2023*';                          
+    $mailer->Port = 465;
 
     //Recipients
     $mailer->setFrom( $email, "$name" );
-    $mailer->addAddress('info@netscom.com.ar','Sitio web');
+    $mailer->addAddress('info@iwomicrocorrugado.com.ar','Sitio web');
 
     //Content
     $mailer->isHTML(true);
