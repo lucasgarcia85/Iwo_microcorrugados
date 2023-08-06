@@ -18,12 +18,12 @@ $emailsubject = $_POST['emailsubject'];
 $message = $_POST['message'];
 $subject = 'Mensaje recibido desde www.iwomicrorrugado.com.ar';
 
-// $recaptcha_secret = "6Lc70vslAAAAAERIlmrHNxMCAOaTl040ezNmQdWR"; //Add secret key
-// $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$recaptcha_secret."&response=".$_POST['g-recaptcha-response']);
-// $response = json_decode($response, true);
+$recaptcha_secret = "6LcdFocnAAAAAFNBd06hfGGpXuZx12UJV7nUDiEZ"; //Add secret key
+$response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$recaptcha_secret."&response=".$_POST['g-recaptcha-response']);
+$response = json_decode($response, true);
 
 if( empty(trim($name)) ) $name = 'anonimo';
-if( empty(trim($service)) ) $service = 'El Usuario no seleccionó ningún servicio';
+// if( empty(trim($service)) ) $service = 'El Usuario no seleccionó ningún servicio';
 
 $body = <<<HTML
     <h1>Mensaje recibido desde www.Iwomicrocorrugado.com.ar</h1>
@@ -38,10 +38,10 @@ try {
     //Server setting
     $mailer->SMTPDebug = 0;
     $mailer->isSMTP();
-    $mailer->Host = 'smtp.iwomicrocorrugado.com.ar';
+    $mailer->Host = 'c1762198.ferozo.com';
     $mailer->SMTPAuth = false;  
     $mailer->Username = 'info@iwomicrocorrugado.com.ar';
-    $mailer->Password = 'Ivo2023*';                          
+    $mailer->Password = 'Ivo2024*';                          
     $mailer->Port = 465;
 
     //Recipients
@@ -55,12 +55,15 @@ try {
     $mailer->AltBody = strip_tags($body);
     $mailer->CharSet = 'UTF-8';
 
-    if($response["success"] === true){
-        $mailer->send();
-        header("Location: thank-you.html" );
-    } else {
-        header("Location: 404.html" );
-    }
+    // if($response["success"] === true){
+    //     $mailer->send();
+    //     header("Location: thank-you.html" );
+    // } else {
+    //     header("Location: 404.html" );
+    // }
+
+    $mailer->send();
+    header("Location: thank-you.html" );
 
 } catch (Exception $e) {
     return "El mensaje no pudo ser enviado. Error: $mailer->ErrorInfo";
