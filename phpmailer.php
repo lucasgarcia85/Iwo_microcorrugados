@@ -16,7 +16,7 @@ $telephone = $_POST['telephone'];
 $email = $_POST['email'];
 $emailsubject = $_POST['emailsubject'];
 $message = $_POST['message'];
-$subject = 'Mensaje recibido desde www.iwomicrorrugado.com.ar';
+$subject = 'Mensaje recibido desde www.iwomicrocorrugado.com.ar';
 
 $recaptcha_secret = "6LcdFocnAAAAAFNBd06hfGGpXuZx12UJV7nUDiEZ"; //Add secret key
 $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$recaptcha_secret."&response=".$_POST['g-recaptcha-response']);
