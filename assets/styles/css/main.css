@@ -11931,7 +11931,7 @@ html {
 }
 body {
   font-family: "Museo", "Montserrat", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   line-height: 1.5;
   color: black;
 }
@@ -12599,6 +12599,38 @@ header .navbar-brand img {
   .micro_montaje .montaje_img {
     width: 40%;
   }
+}
+
+body {
+  background-color: #ebebeb;
+}
+
+.header-thankyou {
+  position: relative;
+  text-align: center;
+  height: auto;
+}
+.header-thankyou .logo-thankyou {
+  display: flex;
+}
+.header-thankyou .logo-thankyou img {
+  width: 90%;
+}
+
+.main-thankyou {
+  padding: 50px;
+  height: auto;
+}
+.main-thankyou h1, .main-thankyou .h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.footer-thankyou {
+  text-align: center;
+  font-size: 2rem;
+  height: auto;
+  color: rgb(135, 25, 25);
 }
 
 /*# sourceMappingURL=main.css.map */

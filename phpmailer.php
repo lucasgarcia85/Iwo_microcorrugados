@@ -39,11 +39,13 @@ try {
     $mailer->SMTPDebug = 0;
     $mailer->isSMTP();
     $mailer->Host = 'c1762198.ferozo.com';
-    $mailer->SMTPAuth = false;  
+    $mailer->SMTPAuth = true;  
     $mailer->Username = 'info@iwomicrocorrugado.com.ar';
-    $mailer->Password = 'Ivo2024*';                          
+    $mailer->Password = 'Ivo2024*';
+    $mailer->SMTPSecure = 'ssl';                          
     $mailer->Port = 465;
 
+    
     //Recipients
     $mailer->setFrom( $email, "$name" );
     $mailer->addAddress('info@iwomicrocorrugado.com.ar','Sitio web');
@@ -55,18 +57,20 @@ try {
     $mailer->AltBody = strip_tags($body);
     $mailer->CharSet = 'UTF-8';
 
-    // if($response["success"] === true){
-    //     $mailer->send();
-    //     header("Location: thank-you.html" );
-    // } else {
-    //     header("Location: 404.html" );
-    // }
+    
 
-    $mailer->send();
-    header("Location: thank-you.html" );
+    if($response["success"] === true){
+        $mailer->send();
+        header("Location: thank-you.html" );
+    } else {
+        header("Location: 404.html" );
+    }
 
+   
 } catch (Exception $e) {
     return "El mensaje no pudo ser enviado. Error: $mailer->ErrorInfo";
 }
+
+
 
 ?>

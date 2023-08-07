@@ -164,7 +164,7 @@
               <form class="row" id="contact-form" action="phpmailer.php" method="post" enctype="multipart/form-data">
                 <div class="col-lg-12 col-sm-12">
                   <div class="form-group">
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre*">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre*" required>
                     <div id="name-error" class="error-msg">Nombre inválido</div>
                   </div>
                   <div class="form-group">
@@ -172,11 +172,11 @@
                     <div id="telephone-error" class="error-msg">Teléfono inválido</div>
                   </div>
                   <div class="form-group">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email*">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email*" required>
                     <div id="email-error" class="error-msg">E-mail inválido</div>
                   </div>
                   <div class="form-group">
-                    <input type="asunto" class="form-control" id="emailsubject" name="emailsubject" placeholder="Asunto*">
+                    <input type="text" class="form-control" id="emailsubject" name="emailsubject" placeholder="Asunto*" required>
                     <div id="email-error" class="error-msg">E-mail inválido</div>
                     
                   </div>
@@ -184,7 +184,7 @@
               
                 <div class="col-12">
                   <div class="form-group">
-                    <textarea class="form-control" id="message" name="message" placeholder="Mensaje*"></textarea>
+                    <textarea class="form-control" id="message" name="message" placeholder="Mensaje*" required></textarea>
                     <div id="message-error" class="error-msg">La consulta no puede quedar vacía</div>
                   </div>
                 </div>
@@ -271,69 +271,6 @@
 
   </footer>
 
-  <!-- SCRIPTS: Begin -->
-  
-  
-  <!-- <script>
-    const constraints = {
-      name: {
-        presence: {
-          allowEmpty: false,
-        }
-      },
-      telephone: {
-        presence: {
-          allowEmpty: true
-        }
-      },
-      email: {
-        presence: {
-          allowEmpty: false
-        },
-        email: true
-      },
-      emailsubject: {
-        presence: {
-          allowEmpty: false
-      }
-      message: {
-        presence: {
-          allowEmpty: false
-        }
-      }
-    };
-
-    const form = document.getElementById('contact-form');
-
-    form.addEventListener('submit', function (event) {
-      const formValues = {
-        name: form.elements.name.value,
-        telephone: form.elements.telephone.value,
-        email: form.elements.email.value,
-        emailsubject: form.elements.subject.value,
-        message: form.elements.message.value
-      };
-
-      const errors = validate(formValues, constraints);
-
-      if (errors) {
-        event.preventDefault();
-
-        document.querySelectorAll('.error-msg').forEach((element, index) => {
-          element.classList.remove('visible');
-        });
-
-        Object.keys(errors).forEach(key => {
-          document.querySelector(`#${key}-error`).classList.add('visible');
-        });
-
-      }
-    }, false);
-
-    function onRecaptchaSuccess() {
-      document.getElementById('contact-form').submit();
-    }
-  </script> -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 
