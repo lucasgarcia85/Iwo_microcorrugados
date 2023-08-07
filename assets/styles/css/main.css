@@ -12624,7 +12624,12 @@ body {
 }
 .main-thankyou h1, .main-thankyou .h1 {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
+}
+.main-thankyou p {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 3rem;
 }
 
 .footer-thankyou {
