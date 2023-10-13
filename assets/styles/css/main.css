@@ -12174,26 +12174,15 @@ footer .formulario .form-group .form-select:focus {
 footer .formulario .form-group textarea {
   height: 178px;
 }
+footer .formulario .form-group .g-recaptcha {
+  overflow: hidden;
+}
 footer .formulario .botonform {
   width: 85%;
   margin: auto;
 }
 footer .formulario .botonform .btn {
   min-width: 180px;
-}
-footer .formulario .captcha {
-  display: inline;
-  padding-right: 1.2rem;
-}
-footer .formulario .captcha #respuesta {
-  width: 9rem;
-  border: none;
-  border-radius: 0.6rem;
-  text-align: center;
-}
-footer .formulario .captcha i {
-  font-size: 1.9rem;
-  margin-left: 1rem;
 }
 footer .logo-footer {
   margin-top: 4rem;
